@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul class="list">
+    <li class="list__item"></li>
+</ul>
+
+<div class="list__controls">
+    <input type="text" class="list__field">
+    <button class="list__button"></button>
+</div>
+
+<div class="row">
+    <div class="col">1</div>
+    <div class="col">2</div>
+    <div class="col">3</div>
+    <div class="col">4</div>
+</div>
+
+<style>
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .col {
+        border: 1px solid black;
+    }
+
+    @media screen and (max-width: 720px) {
+        .row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (max-width: 360px) {
+        .row {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>
+
+</body>
+</html>
