@@ -20,3 +20,9 @@ var string = "The quick brown fox jumps over the lazy dog."
 isPangram(string); // true
 var string = "This is not a pangram."
 isPangram(string); // false
+
+function isPangram2(string){
+  return 'abcdefghijklmnopqrstuvwxyz'
+    .split('')
+    .every((x) => string.toLowerCase().includes(x));
+}
